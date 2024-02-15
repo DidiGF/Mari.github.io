@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta</title>
+  <link rel="stylesheet" href="./stylec.css">
+  <style>
+    #redirectButton {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #ff00ff; 
+      color: #ffffff; 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="valentines-day">
+  <div class="envelope"></div>
+  <div class="heart"></div>
+  <div class="text">ABREME ♥️</div>
+  <div class="front"></div>
+</div>
+
+<div id="card">
+  <div class="side one"></div>
+  <div class="side two">
+    <h2>Querida Mari...</h2>
+    <p>Me gustaria admitir que las ultimas semanas han sido bastante normales para mi,
+      me he levantado, arreglado, comido y hecho mi rutina diaria sin ningun cambio aparente.
+      Pero la verdad es que las cosas no son asi... El primer pensamiento que me llega a la mente
+      cada que me levanto y el ultimo que me abandona al dormir eres tú. No estoy seguro de que nos
+      depara el futuro, pero si de que quiero compartirlo contigo y mejorar a tu lado.
+      <br>Te amo corazón❣️
+    </p>
+    <p>
+    </p>
+  </div>
+</div>
+<button id="redirectButton">Regresar c:</button>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="./scriptc.js"></script>
+
+<script>
+  document.getElementById('redirectButton').addEventListener('click', function() {
+    window.location.href = 'index.html'; 
+  });
+</script>
+
+</body>
+</html>

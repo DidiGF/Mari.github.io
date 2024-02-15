@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'JandaRomantic';
+    src: url('JandaRomantic.ttf') format('truetype');
+}
+
+body {
+    font-family: 'JandaRomantic', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#videoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+button#toggleMenu {
+    font-family: 'JandaRomantic', sans-serif; /* Aplicar fuente personalizada al botón */
+    background: linear-gradient(#FFD1DC, #FFB6C1);
+    padding: 20px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #FF1493, 0 0 10px #FF1493, 0 0 15px #FF1493;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+}
+
+#menu {
+    font-family: 'JandaRomantic', sans-serif; /* Aplicar fuente personalizada al menú */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#FF6347, #b40a8f);
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 0 15px #FF1493, 0 0 30px #FF1493, 0 0 45px #FF1493;
+    transition: opacity 0.5s, transform 0.5s;
+    z-index: 1;
+}
+
+.menuItem {
+    font-family: 'JandaRomantic', sans-serif; /* Aplicar fuente personalizada a los elementos del menú */
+    background: linear-gradient(#eb339e, #da77bc);
+    margin-right: 20px;
+    padding: 16px 24px;
+    font-size: 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #FF1493, 0 0 30px #FF1493, 0 0 45px #FF1493;
+}
+
+.menuItem:hover {
+    background: linear-gradient(#DC143C, #FF6347);
+    color: #fff;
+    transition: background 0.3s ease;
+}
